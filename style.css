@@ -5,58 +5,32 @@
 body{
     margin: 0;
     padding: 0;
+   
 }
-
-
-.nav-wrapper{
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap ;
+button{
+    cursor: pointer;
 }
-
-.nav-items{
-    /* flex-shrink: 2; */
-    flex-basis: 20%;
-    flex-shrink: 2;
+.navbar {
+    margin: 4%;
 }
-
-.nav-item1{
-    display: flex;
-    padding: 0 20px;
+.navbar img{
+    width: 64%; 
 }
-.nav-item1 svg{
-    padding-top: 40px;
-}
-.nav-item1 h1{
-    font-family: Arial, Helvetica, sans-serif;font-size: 40px;
-    font-weight: bold;
-}
-.nav-item2 button{
-    margin-top: 30px;
-    width: 70%;
-    height: 40%;
-    border: 1px solid rgb(11, 194, 223);
-    border-radius: 45%;
-    background-color: white;
+.navbar button{
+    background: white;
     color: rgb(11, 194, 223);
-    
+    border: 1px solid rgb(11, 194, 223);
+    border-radius: 25px;
 }
+
 
 @media screen and (min-width: 768px) {
-    /* body{
-        margin: 0 auto;
-    } */
-    nav{
-        text-align: center;
-        margin: 5% 5%;
+    .navbar img {
+        width: 100%;
     }
     
-
-    .nav-item2 button{
-        width: 50%;
-        border-radius: 25px;
-    }
 }
+
 
 /* Section 1 */
 .Huddle-fan{
@@ -69,7 +43,7 @@ body{
 .community-fans h1{
     font-family: Arial, Helvetica, sans-serif;
     font-weight: bold;
-    font-size: 50px;
+    font-size: 30px;
 }
 
 .community-fans div{
@@ -83,7 +57,7 @@ body{
     padding-right: 40px;
 }
 .community-fans button{
-    padding: 20px;
+    padding: 10px;
     width: 60%;
     border-radius: 30px;
     color: white;
@@ -98,6 +72,11 @@ body{
     .community-fans div{
          max-width: 800px; 
     }
+    .community-fans h1{
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight: bold;
+        font-size: 50px;
+    }
     .community-fans p {
         font-weight: 200px;
         font-size: 30px;
@@ -105,6 +84,7 @@ body{
 
     .community-fans button{
         width: 40%;
+        padding: 20px;
     }
 }
 .screen-mock {
@@ -231,7 +211,7 @@ body{
 
     .box p{
         padding: 0;
-        font-size: 18px;
+        font-size: 28px;
 
     }
 
@@ -247,7 +227,14 @@ body{
 /* Flow Conversation */
 .flow-wrapper{
     text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 15%;
 }   
+
+.flow-wrapper div{
+    flex: 1 1 100%;
+}
 
 .flow-wrapper img {
     width: 70%;
@@ -258,4 +245,179 @@ body{
     font-weight: bolder;
     font-size: 40px;
     padding-top: 50px;
+}
+
+.flow-wrapper p {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 25px;
+    padding: 20px;
+}
+
+@media screen and (min-width: 768px) {
+    .flow-wrapper{
+        display: flex;
+        text-align: left;
+        justify-content: space-around;
+        margin-top: 6%;
+    }
+
+
+    .flow-wrapper div{
+        flex: 0 0 40%;
+    }
+    .flow-wrapper div:nth-child(2) {
+        margin: 10% 0;
+    }
+    .flow-wrapper h1{
+ 
+        padding-top: 20px;
+    }
+    .flow-wrapper img {
+        width: 100%;
+        margin: 90px 0;
+    }
+    .flow-wrapper p {
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        font-size: 25px;
+        padding: 0;
+    }
+
+
+}
+
+/* Your User */
+.Your-user{
+    margin-top: 10%;
+    
+}
+.ur-user-image{
+    width: 60%;
+}
+.bg-tg{
+  
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap-reverse;
+    justify-content: space-evenly;
+    align-items: center;
+    text-align: left;
+    background-color: #f6fbff;
+    position: relative;
+    
+}
+.box{
+    flex: 0 0 100%;
+    text-align: center;
+
+}
+.box img{
+   padding-top: 60px;
+}
+
+.box h2{
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bolder;
+    font-size: 40px;
+    padding-top: 50px;
+    
+}
+
+.box p{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 25px;
+    padding: 20px;
+}
+.bg-desktop{
+    background: url("./images/bg-section-top-desktop-1.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 150px;
+    background-position: 40%;
+    /* top: 220%; */
+}
+.bf-desktop{
+    background: url("./images/bg-section-bottom-desktop-1.svg");
+    background-repeat: no-repeat;
+    height: 300px;
+    background-size: cover;
+    background-position: 80%;
+}
+
+
+
+@media screen and (min-width: 768px) {
+    .bg-tg{
+        justify-content: space-around;
+    }
+    .box{
+        flex: 0 0 40%;
+        text-align: left;
+    }
+
+    .box h2{
+        font-size: 60px;
+    }
+
+    .box p{
+        padding: 0;
+        font-size: 28px;
+
+    }
+
+    .box img{
+        width: 100%;
+       padding-top: 60px;
+    }
+    
+}
+
+/* Read To Build */
+.Ready-To-Build{
+    text-align: center;
+    margin-top: 10%;
+    margin-bottom: 10%;
+}
+
+.Ready-To-Build h1{
+    font-size: 40px;
+    font-weight: bolder;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.Ready-To-Build button{
+    padding: 10px;
+    width: 60%;
+    border-radius: 30px;
+    color: white;
+    background: rgb(234, 0, 160);
+    font-size: 20px;
+    font-weight: bold;
+    border: 0;
+    margin-top: 2%;
+}
+
+@media screen and (min-width: 768px) {
+    .Ready-To-Build h1{
+        font-size: 60px;
+    }
+
+    .Ready-To-Build button{
+        width: 30%;
+        padding: 20px;
+    }
+}
+/* }Footer */
+
+footer{
+    background: #00252E;
+    color: white;
+}
+
+.footer-wrapper{
+    display: flex;
+    justify-content: center;
+}
+
+.footer-wrapper div{
+    flex: 0 0 40%;
 }
