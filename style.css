@@ -411,13 +411,79 @@ button{
 footer{
     background: #00252E;
     color: white;
+    margin: 0;
 }
 
+#image1{
+    width: 100%;
+   
+}
+#image2{
+    width: 100%;
+    display: none;
+}
 .footer-wrapper{
-    display: flex;
-    justify-content: center;
+    /* margin: 10%; */
+   width: 95%;
+   padding-left: 10%;
 }
 
-.footer-wrapper div{
-    flex: 0 0 40%;
+.footer-wrapper h1{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 70px;
+    font-weight: bold;
+    padding: 10px 0;
+
 }
+
+.footer-wrapper p{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+}
+
+.footer-wrapper h2 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size:30px;
+    font-weight: bold;
+    padding: 10px 0;
+
+}
+
+.footer-wrapper input{
+    padding: 15px;
+    width: 90%;
+    margin-block-end: 5%;
+}
+
+.footer-wrapper button{
+    padding: 20px;
+    background: rgb(234, 0, 160);
+    color: white;
+    border: 0;
+    width: 40%;
+    margin-block-end: 5%;
+    border-radius: 4%;
+    margin-left: 50%;
+}
+
+@media screen and (min-width: 768px) {
+    #image1{
+        display: none;
+    }
+    #image2{
+        width: 100%;
+        display: block;
+    }
+
+    .footer-wrapper{
+        display: flex;
+        flex-wrap: wrap-reverse;
+        justify-content: space-between;
+        padding: 10%;
+    }
+
+    .footer-wrapper div{
+        flex: 0 0 40%;
+    }
+}
+
