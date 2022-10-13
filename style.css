@@ -35,6 +35,8 @@ button{
 /* Section 1 */
 .Huddle-fan{
     margin: 5% auto;
+
+    
 }
 
 .community-fans{
@@ -43,7 +45,7 @@ button{
 .community-fans h1{
     font-family: Arial, Helvetica, sans-serif;
     font-weight: bold;
-    font-size: 30px;
+    font-size: 20px;
 }
 
 .community-fans div{
@@ -52,7 +54,7 @@ button{
 }
 .community-fans p {
     font-weight: 200px;
-    font-size: 20px;
+    font-size: 10px;
     padding-left: 40px;
     padding-right: 40px;
 }
@@ -67,7 +69,9 @@ button{
     border: 0;
     margin-top: 5%;
 } 
-
+.screen-mock img{
+    width: 80%;
+}
 @media screen and (min-width: 768px) {
     .community-fans div{
          max-width: 800px; 
@@ -416,6 +420,7 @@ footer{
 
 #image1{
     width: 100%;
+    display: block;
    
 }
 #image2{
@@ -468,7 +473,8 @@ footer{
 
 @media screen and (min-width: 768px) {
     #image1{
-        display: none;
+        display: block;
+        width: 100%;
     }
     #image2{
         width: 100%;
